@@ -1,40 +1,48 @@
+.empleados{
+    position: sticky;
+    top: 5px;
+    left: 5px;
+    z-index: 3;
+}
 .renglon-1
 {
     width: 100%;
-    height: 100%;
 }
 .celda{
     display: inline-block;
     margin-left: 5px;
     margin-top: 5px;
     width: calc(100% / 9 - 10px);
-    height: calc(100% / 26 - 10px);
+    height: calc(100% / 15 - 10px);
     background-color: blue;
-    border: 1px;
     border-radius: 5px;
 }
 
-.celda p{
+.texto{
     position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
     font-size: 1em;
     display: block;
     margin: 0;
-    top: calc(50% - 0.5em);
     text-align: center;
 }
 
 .empleado{
-    height: calc(((100% / 26) * 6) - 10px);
+    --parentHeight: calc(((100% / 26) * 6) - 10px);
+    height: var(--parentHeight);
 }
 
-input{
+.empleado input[type="text"]{
+    writing-mode:sideways-lr;
     width: 100%;
-    background-color: transparent;
     height: 100%;
+    background-color: transparent;
     text-align: center;
     text-transform: uppercase;
-    border: 1px solid green;
+    border: none;
     font-size: 1em;
     color: white;
-    transform: rotate(-90deg);
 }
