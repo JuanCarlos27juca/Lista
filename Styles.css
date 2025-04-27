@@ -1,7 +1,10 @@
+html{
+    background-color: lightcoral;
+}
 .empleados{
     position: sticky;
-    top: 5px;
-    left: 5px;
+    top: 0px;
+    left: 0px;
     z-index: 3;
 }
 .renglon-1
@@ -12,9 +15,9 @@
     display: inline-block;
     margin-left: 5px;
     margin-top: 5px;
-    width: calc(100% / 9 - 10px);
+    width: calc(100% / 10 - 10px);
     height: calc(100% / 15 - 10px);
-    background-color: blue;
+    background-color: white;
     border-radius: 5px;
 }
 
@@ -44,5 +47,10 @@
     text-transform: uppercase;
     border: none;
     font-size: 1em;
-    color: white;
+    color: black;
+}
+
+.renglon-1:nth-child(odd) .celda{
+    background-color: lightgray;
+
 }
